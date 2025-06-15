@@ -1,0 +1,113 @@
+/* General Body Styling */
+body {
+    font-family: 'Inter', sans-serif; /* Using a common sans-serif font */
+    background-color: #f0f2f5; /* Light gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure it takes full viewport height */
+    margin: 0;
+    padding: 20px; /* Add some padding around the form */
+    box-sizing: border-box; /* Include padding in element's total width and height */
+}
+
+/* Form Container Styling */
+.form-container {
+    background-color: #ffffff;
+    padding: 3rem; /* Increased padding */
+    border-radius: 1.5rem; /* More rounded corners */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); /* Softer, larger shadow */
+    max-width: 480px; /* Max width for larger screens */
+    width: 100%; /* Full width on smaller screens */
+    box-sizing: border-box;
+}
+
+/* Heading Styling */
+.form-container h2 {
+    font-size: 2.25rem; /* Larger heading */
+    font-weight: 700; /* Bold */
+    color: #1a202c; /* Dark text */
+    margin-bottom: 2rem; /* More space below heading */
+    text-align: center;
+}
+
+/* Form Group Styling (for labels and inputs) */
+.form-group {
+    margin-bottom: 1.5rem; /* Space between form groups */
+}
+
+/* Label Styling */
+.form-group label {
+    display: block;
+    margin-bottom: 0.75rem; /* Space between label and input */
+    font-size: 1rem;
+    font-weight: 500;
+    color: #4a5568; /* Slightly darker gray for labels */
+}
+
+/* Input Field Styling */
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    width: 100%;
+    padding: 1rem 1.25rem; /* Increased padding */
+    border: 1px solid #cbd5e0; /* Light border */
+    border-radius: 0.75rem; /* Rounded input fields */
+    font-size: 1.125rem; /* Larger font size */
+    color: #2d3748; /* Dark text for input */
+    transition: all 0.2s ease-in-out; /* Smooth transition for focus */
+}
+
+/* Input Field Focus State */
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus {
+    outline: none;
+    border-color: #6366f1; /* Purple border on focus */
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2); /* Soft shadow on focus */
+}
+
+/* Submit Button Styling */
+.form-container button[type="submit"] {
+    width: 100%;
+    padding: 1.25rem; /* Larger button padding */
+    background-color: #6366f1; /* Purple button */
+    color: #ffffff;
+    border: none;
+    border-radius: 0.75rem; /* Rounded button */
+    font-size: 1.25rem; /* Larger font for button */
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, transform 0.1s ease-in-out;
+}
+
+/* Submit Button Hover State */
+.form-container button[type="submit"]:hover {
+    background-color: #4f46e5; /* Darker purple on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Submit Button Active (Pressed) State */
+.form-container button[type="submit"]:active {
+    transform: translateY(0); /* Press effect */
+}
+
+/* Responsive Adjustments for smaller screens */
+@media (max-width: 640px) {
+    .form-container {
+        padding: 2rem; /* Less padding on smaller screens */
+        border-radius: 1rem;
+    }
+    .form-container h2 {
+        font-size: 1.75rem; /* Smaller heading on mobile */
+        margin-bottom: 1.5rem;
+    }
+    .form-group input {
+        padding: 0.875rem 1rem; /* Adjust input padding */
+        font-size: 1rem;
+    }
+    .form-container button[type="submit"] {
+        padding: 1rem; /* Adjust button padding */
+        font-size: 1.125rem;
+    }
+}
